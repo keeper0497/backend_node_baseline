@@ -28,7 +28,6 @@ export const initializeDatabase = async () => {
           idle: 10000,
         },
         // --- IMPORTANT: Add `dialectModule` for better ESM compatibility with Sequelize ---
-        // This explicitly tells Sequelize to load the 'pg' module.
         dialectModule: await import('pg'),
       }
     );
